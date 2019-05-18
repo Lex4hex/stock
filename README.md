@@ -68,7 +68,7 @@ Response:
 ```  
 
 
-###Notes
+### Notes
 Initial stocks list is genereted on application startup  
 
 ### Technologies
