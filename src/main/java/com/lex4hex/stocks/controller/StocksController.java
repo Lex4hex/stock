@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * API controller for operation with {@link Stock} object
+ * API controller for operation with {@link Stock}s
  */
 @RestController
 @RequestMapping("/api/stocks")

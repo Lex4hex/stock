@@ -9,13 +9,11 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
- * DTO. Represent response {@link Stock} entity
- * <p>
- * Represents a stock. Stock has unique id, custom stockName with it's price.
- * Also it has lastUpdate timestamp it's time when stock was updated or created
+ * DTO. Represents a stock. Stock has unique id, custom name and price.
+ * Also it has lastUpdate timestamp it's the time when stock was updated or created
  **/
 @Data
-@ApiModel(description = "Represents a stock. Stock has unique id, custom stockName with it's price.")
+@ApiModel(description = "Represents a stock. Stock has unique id, custom name with it's price.")
 public class StockResponse {
     /**
      * Unique id

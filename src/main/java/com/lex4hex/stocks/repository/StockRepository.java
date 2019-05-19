@@ -11,7 +11,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Repository class for persisting of {@link Stock} objects
+ * Repository for persisting {@link Stock} objects
  */
 @Repository
 public class StockRepository {
@@ -19,7 +19,7 @@ public class StockRepository {
     /**
      * {@link Stock} storage map. Where key is {@link Stock}'s unique id
      */
-    private Map<UUID, Stock> stocks = new ConcurrentHashMap<>(20);
+    private final Map<UUID, Stock> stocks = new ConcurrentHashMap<>(20);
 
     /**
      * Finds a {@link Stock} with provided id in repository

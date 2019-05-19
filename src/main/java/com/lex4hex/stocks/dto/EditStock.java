@@ -10,24 +10,24 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 /**
- * DTO for {@link Stock} creation
+ * DTO for {@link Stock} creation and modification
  *
  * @see Stock
  */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-@ApiModel(description = "Data holder for stock creation")
+@ApiModel(description = "Data holder for stock creation and modification")
 public class EditStock {
 
     /**
-     * {@link Stock}'s stockName
+     * {@link Stock}'s name
      */
     @ApiModelProperty(value = "Name of the stock", required = true)
     @NotNull
     private String stockName;
 
     /**
-     * {@link Stock}'s stockPrice
+     * {@link Stock}'s price
      */
     @ApiModelProperty(value = "Price of the stock", required = true)
     @NotNull

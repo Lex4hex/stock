@@ -23,6 +23,6 @@ class StockGeneratorTest {
     void generateStocks() {
         final List<Stock> allStocks = stockRepository.getAllStocks();
 
-        assertEquals(1, allStocks.size());
+        assertEquals(3, allStocks.size());
     }
 }
