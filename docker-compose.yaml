@@ -1,0 +1,22 @@
+version: "3"
+services:
+  stock:
+    build:
+      context: .
+    image: stock:latest
+    ports:
+      - 8077:8077
+  nginx-static:
+    image: nginx:latest
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./frontend/build:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - segval-dev-network
+networks:
+  segval-dev-network:
+    driver: bridge
+
